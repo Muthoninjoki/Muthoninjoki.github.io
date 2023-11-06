@@ -8,10 +8,9 @@
 
 :root{
     --text-color: #c375d6;
-    --bg-color: #2d2d2d;
-    --white: #fff;
+    --bg-color: #58114b;
+    --white: #fee8ff;
     --black: #000;
-    --mob-color: #222222;
 }
 
 .container{
@@ -42,7 +41,7 @@ nav .logo a{
     text-decoration: none;
     font-size: 32px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: rgb(246, 202, 239);
 }
 
 nav .logo a span{
@@ -77,7 +76,7 @@ nav .hamburger{
     background: none;
     outline: none;
     border: none;
-    display: none;
+    display: block;
     scale: 0.8;
 }
 
@@ -89,12 +88,12 @@ nav .hamburger::before{
     width: 100%;
     height: 3px;
     background: var(--white);
-    margin: 6px 0;
-    transition: 0.3s;
+    margin: 6px 0px;
+    transition: 0.4s;
 }
 
 nav .hamburger::before{
-    transform: rotate(-45deg) translate(-8px, 5px);
+    transform: rotate(-45deg) translate(-8px, -5px);
 }
 
 nav .hamburger.active::after{
@@ -146,12 +145,16 @@ nav .hamburger.active .bar{
     margin-bottom: 20px;
 }
 
+.left h4 span{
+    color: var(--text-color);
+}
+
 .left p{
     width: 90%;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    color: antiquewhite;
+    color: rgb(246, 215, 250);
     mask-border: 50px;
     margin-bottom: 15px;
     text-align: justify;
@@ -177,7 +180,7 @@ nav .hamburger.active .bar{
     transition: 0.3s ease-in;
 }
 
-.left .btn button:hover{
+.left .btn button:hover {
     transform: translateY(-5px);
     color: var(--text-color);
     background: transparent;
@@ -199,4 +202,145 @@ nav .hamburger.active .bar{
     border-radius: 50%;
     border: 6px solid var(--text-color);
     box-shadow: 0 0 60px var(--text-color);
+}
+
+@media screen and (max-width: 1280px){
+    nav{
+        padding: 0 50px;
+    }
+
+    .home{
+        padding: 250px 50px;
+        z-index:auto;
+    }
+
+    .left h1{
+        font-size: 4rem;
+    }
+
+    .right .profile img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    header{
+        background: var(--bg-color);
+        position: sticky;
+        top: 0;
+        z-index: 9;
+    }
+
+    nav .hamburger{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 90px;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 50px;
+        gap: 30px;
+        transition: 0.5s ease-in;
+    }
+
+    nav ul li a{
+        font-size: 28px;
+    }
+
+    nav ul.active{
+        left: 0%;
+    }
+
+    .home{
+        position: relative;
+        padding: 50px;
+        height: 100%;
+    }
+
+    .home-info{
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        padding-top: 50px;
+    }
+
+    .left p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .left h3{
+        font-size: 2rem;
+    }
+
+    .left h1{
+        font-size: 3rem;
+    }
+
+    .left h4{
+        font-size: 1.8rem;
+    }
+
+    .left .btn{
+        padding-bottom: 50px;
+    }
+
+    .right .profile img {
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 567px){
+    nav{
+        padding: 0 30px;
+    }
+
+    nav .logo a{
+        font-size: 30px;
+    }
+
+    nav ul{
+        padding: 30px 30px 0;
+    }
+
+    nav ul li a{
+        font-size: 24px;
+    }
+
+    .home{
+        padding: 30px;
+    }
+
+    .left h3{
+        font-size: 1.8rem;
+    }
+
+    .left h1{
+        font-size: 2.8rem;
+    }
+
+    .left h4{
+        font-size: 1.6rem;
+    }
+
+    .left .btn button{
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .right .profile img {
+        width: 300px;
+        height: 300px;
+    }
 }

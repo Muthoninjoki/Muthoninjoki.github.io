@@ -5,3 +5,12 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navList.classList.toggle('active');
 });
+
+
+const typed = new Typed('.multiple', {
+    strings: ['Front-End Developer', 'Ui/Ux Designer', 'Freelancer'],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:1000,
+    loop: true
+});
