@@ -50,8 +50,8 @@ nav .logo a span{
 
 nav ul{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: right;
+    justify-content: right;
     gap: 35px;
     font-size: 18px;
     list-style: none;
@@ -68,7 +68,7 @@ nav ul li a:hover{
     color: var(--text-color);
 }
 
-nav .hamburger{
+nav .hamburger {
     position: relative;
     width: 30px;
     cursor: pointer;
@@ -76,24 +76,24 @@ nav .hamburger{
     background: none;
     outline: none;
     border: none;
-    display: block;
+    display: none;
     scale: 0.8;
 }
 
 nav .hamburger .bar,
 nav .hamburger::after,
-nav .hamburger::before{
+nav .hamburger::before {
     content: '';
     display: block;
     width: 100%;
-    height: 3px;
+    height: 5px;
     background: var(--white);
     margin: 6px 0px;
     transition: 0.4s;
 }
 
-nav .hamburger::before{
-    transform: rotate(-45deg) translate(-8px, -5px);
+nav .hamburger.active::before{
+    transform: rotate(-45deg) translate(-8px, 5px);
 }
 
 nav .hamburger.active::after{
@@ -167,7 +167,7 @@ nav .hamburger.active .bar{
     margin: 25px 0;
 }
 
-.left .btn button{
+.left .btn button {
     font-size: 15px;
     font-weight: 600;
     padding: 12px 24px;
