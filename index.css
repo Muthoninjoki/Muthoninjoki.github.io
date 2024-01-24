@@ -202,6 +202,7 @@ nav .hamburger.active .bar{
     border-radius: 50%;
     border: 6px solid var(--text-color);
     box-shadow: 0 0 60px var(--text-color);
+    transition: transform 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 1280px){
