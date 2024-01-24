@@ -193,6 +193,9 @@ nav .hamburger.active .bar{
 
 .right .profile{
     text-align: right;
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .right .profile img{
