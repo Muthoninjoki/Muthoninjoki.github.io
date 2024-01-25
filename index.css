@@ -9,7 +9,7 @@
 :root{
     --text-color: #2d0828;
     --bg-color: #f7c8f1;
-    --white: #892d8e;
+    --white: #902396;
     --black: #000;
 }
 
@@ -41,7 +41,7 @@ nav .logo a{
     text-decoration: none;
     font-size: 32px;
     font-weight: 600;
-    color: rgb(246, 202, 239);
+    color: rgb(99, 4, 85);
 }
 
 nav .logo a span{
@@ -154,7 +154,7 @@ nav .hamburger.active .bar{
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    color: rgb(246, 215, 250);
+    color: rgb(28, 1, 31);
     mask-border: 50px;
     margin-bottom: 15px;
     text-align: justify;
@@ -172,12 +172,12 @@ nav .hamburger.active .bar{
     font-weight: 600;
     padding: 12px 24px;
     border-radius: 25px;
-    color: var(--black);
+    color: whitesmoke; 
     background: var(--text-color);
     border: 2px solid var(--text-color);
     outline: none;
     cursor: pointer;
-    transition: 0.3s ease-in;
+    transition: 0.35s ease-in;
 }
 
 .left .btn button:hover {
@@ -191,21 +191,34 @@ nav .hamburger.active .bar{
 }
 
 
-.right .profile{
+.right .profile-slider{
     text-align: right;
     display: flex;
     overflow: hidden;
     border-radius: 8px;
 }
 
-.right .profile img{
-    width: 500px;
-    height: 500px;
+.right .profile-slider img{
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid var(--text-color);
     box-shadow: 0 0 60px var(--text-color);
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.15s ease-out;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 0;
+    }
+    50% {
+        left: 100;
+    }
+
 }
 
 @media screen and (max-width: 1280px){
