@@ -361,3 +361,26 @@ nav .hamburger.active .bar{
         height: 300px;
     }
 }
+
+footer {
+    background-color: #2d0828;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
