@@ -384,3 +384,7 @@ footer img {
     margin: 0 10px;
     font-size: 18px;
 }
+
+.social-links a:hover {
+    color: rgb(161, 103, 146);
+}
