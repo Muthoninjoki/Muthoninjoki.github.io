@@ -14,3 +14,21 @@ const typed = new Typed('.multiple', {
     backDelay:1000,
     loop: true
 });
+
+
+// JavaScript for profile slider
+const images = document.querySelectorAll('.profile-slider img');
+let currentIndex = 0;
+
+function showImage(index) {
+    images.forEach((image, i) => {
+        image.style.transform = `translateX(${-index * 100}%)`;
+    });
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+}
+
+setInterval(nextImage, 3000);

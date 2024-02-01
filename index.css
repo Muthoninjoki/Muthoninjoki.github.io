@@ -182,7 +182,7 @@ nav .hamburger.active .bar{
 
 .left .btn button:hover {
     transform: translateY(-5px);
-    color: var(--text-color);
+    color: var(--white);
     background: transparent;
 }
 
@@ -205,21 +205,8 @@ nav .hamburger.active .bar{
     border-radius: 50%;
     border: 6px solid var(--text-color);
     box-shadow: 0 0 60px var(--text-color);
-    transition: all 0.15s ease-out;
 }
 
-@keyframes slide {
-    0% {
-        left: 0;
-    }
-    25% {
-        left: 0;
-    }
-    50% {
-        left: 100;
-    }
-
-}
 
 @media screen and (max-width: 1280px){
     nav{
@@ -362,6 +349,14 @@ nav .hamburger.active .bar{
     }
 }
 
+.about-me {
+    background-color: #f7c8f1;
+    padding: -450px;
+    text-align: center;
+    width: 100%;
+    justify-content: bottom;
+}
+
 footer {
     background-color: #2d0828;
     padding: 10px;
@@ -387,4 +382,10 @@ footer img {
 
 .social-links a:hover {
     color: rgb(161, 103, 146);
+}
+
+h2 {
+    background-color: #f7c8f1;
+    text-align: center;
+    position: bottom;
 }
