@@ -1,75 +1,67 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="index.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,600;0,800;1,500&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 	<title>Muthoni Njoki</title>
+	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="container">
-			<nav>
-				<div class="logo">
-					<a href="#"><span>Muthoni</span> Njoki</a>
-				</div>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				<button class="hamburger">
-					<div class="bar"></div>
-				</button>
-			</nav>
+			<a href="#" class="logo">
+				<img src="./images/logo.png" alt="" class="img-fluid">
+			</a>
+			<ul class="menu">
+				<li class="menu_item">
+					<a href="#hero" class="menu_link active-link">Home</a>
+				</li>
+				<li class="menu_item">
+					<a href="#about" class="menu_link">About</a>
+				</li>
+				<li class="menu_item">
+					<a href="#resume" class="menu_link">Resume</a>
+				</li>
+				<li class="menu_item">
+					<a href="#portfolio" class="menu_link">Portfolio</a>
+				</li>
+				<li class="menu_item">
+					<a href="#services" class="menu_link">Services</a>
+				</li>
+				<li class="menu_item">
+					<a href="#contact" class="menu_link">Contact</a>
+				</li>
+				<i class="uil uil-times close_icon"></i>
+			</ul>
+			<i class="uil uil-bars toggle_icon"></i>
 		</div>
 	</header>
 
-	<section class="home">
-		<div class="container">
-			<div class="home-info">
-				<div class="left">
-					<h3>Hi, I am</h3>
-					<h1>Muthoni Njoki</h1>
-					<h4>And I'm a <span class="multiple"></span>
-					</h4>
-					<p>
-						A passionate Product Designer and Front-End Developer. <br> I speak a little Spanish and German. <br> <b>Please bear with me I'm currently revamping my portfolio.</b>
-					</p>
-					
-					<div class="btn">
-						<button > Hire Me </button>
-					</div>
+	<main>
+		<!--hero-->
+		<section class="hero section" id="hero">
+			<div class="hero_container container grid">
+				<div class="hero_content">
+					<h4>Hi there,</h4>
+					<h1>I'm <b>Muthoni Njoki</b>
+						<span class="typed" data-typed-items="Product Designer, Frontend Developer"></span>
+					</h1>
+					<p>A passionate Product Designer and Front-End Developer. <br> I speak a little Spanish and German. <br> <b>PLEASE BEAR WITH ME I'M CURRENTLY WORKING ON MY PORTFOLIO</b></p>
+					<a href="#contact" class="btn">
+						Read More
+						<i class="uil uil-angle-right"></i>
+					</a>
 				</div>
-				<div class="right">
-					<div class="profile-slider">
-						<img src="images/mem4.png" alt="mem4">
-						<img src="images/mem2.png" alt="mem2">
-						<img src="images/mem3.png" alt="mem3">
-					</div>
+				<div class="hero_img">
+					<img src="./images/mem4.png" alt="" class="img-fluid">
 				</div>
 			</div>
-		</div>
-	</section>
-	
+		</section>
+	</main>
 
 
-<!--footer-->
-	<footer>
-		<div class="social-links">
-			<a href="https://www.linkedin.com/in/muthoni-njoki-082170224/"><i class="uil uil-linkedin"></i></a>
-			<a href="https://twitter.com/_MNjoki" target="_blank"><i class="uil uil-twitter-alt"></i></a>
-			<a href="https://github.com/Muthoninjoki" target="_blank"><i class="uil uil-github"></i></a>
-		</div>
-	</footer>
-	
-
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="main.js">
-
-</script>
-
+	<!--Main Js Script-->
+	<script src="./main.js"></script>
 </body>
 </html>

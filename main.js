@@ -1,34 +1,18 @@
-const hamburger = document.querySelector('.hamburger');
-const navList = document.querySelector('nav ul');
+const iconToggle = document.querySelector('.toggle_icon');
+const navbarMenu = document.querySelector('.menu');
+const menuLinks = document.querySelector('.menu_link');
+const iconClose = document.querySelector('.close_icon');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navList.classList.toggle('active');
+iconToggle.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
 });
 
-
-const typed = new Typed('.multiple', {
-    strings: ['Product Designer', 'Front-End Developer'],
-    typeSpeed:100,
-    backSpeed:100,
-    backDelay:1000,
-    loop: true
+iconClose.addEventListener('click', () => {
+    navbarMenu.classList.remove('active');
 });
 
-
-// JavaScript for profile slider
-const images = document.querySelectorAll('.profile-slider img');
-let currentIndex = 0;
-
-function showImage(index) {
-    images.forEach((image, i) => {
-        image.style.transform = `translateX(${-index * 100}%)`;
-    });
-}
-
-function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
-}
-
-setInterval(nextImage, 3000);
+menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', () => {
+        navbarMenu.classList.remove('active');
+    })
+})
