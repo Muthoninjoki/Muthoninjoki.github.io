@@ -73,7 +73,7 @@ function resumeActive() {
 
     pages.forEach(page => {
         const sectionHeight = page.offsetHeight;
-        const sectionTop = page.offsetTop - 50;
+        const sectionTop = page.offsetTop - 120;
 
         let sectionId = page.getAttribute('id');
 
@@ -87,3 +87,6 @@ function resumeActive() {
 }
 
 window.addEventListener('scroll', resumeActive);
+
+//portfolio
+
