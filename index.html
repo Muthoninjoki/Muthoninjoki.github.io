@@ -4,31 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="index.css">
     <title>Muthoni Njoki</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Muthoni</a>
+        <a href="#" class="logo">MN</a>
         <nav>
-            <a href="#" class="active"> About me</a>
+            <a href="aboutme.html" class="active"> About me</a>
+            <a href="process.html" class="active"> Process</a>
+            <a href="experience.html" class="active"> Experience</a>
         </nav>
     </header>
     <section class="home">
         <div class="home-img">
             <img src="./images/image 4.png" alt="">
+                <div class="availability-status">
+                    <span class="glow-dot"></span>
+                    <span>Available for work</span>
+                </div>
         </div>
         <div class="home-content">
             <h1>Hi, I'm <span>Muthoni Njoki</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I am a skilled product designer and project manager with expertise in frontend development, UI/UX design and product management.<br> With a passion for creating user-centered solutions, I excel at streamlining workflows, enhancing user experiences and delivering impactful products that meet both business and user needs. <br> Currently, I work at Sync where I specialize in designing and managing innovative projects that drive results.</p>
+            <p>I'm also a system thinker, gamification fan and productivity
+                enthusiast who thrives on building experiences that work.
+            </p>
+            <a href="mailto:your-fmuthoninjoki@gmail.com" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <section class="tools">
+        <h1> Tool I use Frequently</h1>
+        <div class="tool-slider">
+        <div class="slider-track">
+            <img src="images/icons8-slack-64.png" alt="Slack" />
+            <img src="images/icons8-visual-studio-64.png" alt="VSCode" />
+            <img src="images/icons8-figma-64.png" alt="Figma" />
+            <img src="images/icons8-miro-64.png" alt="Miro" />
+            <img src="images/icons8-google-64.png" alt="Google" />
+            <img src="images/icons8-clickup-64.png" alt="ClickUp" />
+            <img src="images/icons8-canva-64.png" alt="Canva" />
+            <img src="images/icons8-jira-64.png" alt="Jira" />
+        </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h1>Explore my projects</h1>
+        <p>
+            I love turning ideas into real, usable things. Blending creativity, structure,
+            and a touch of tech magic to build clean, thoughtful digital experiences.
+        </p>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                <img src="images/Dawamu.jpeg" alt="Dawamu School App" />
+                <h3>Dawamu School App</h3>          
+                </div>
+                <a href="https://www.behance.net/gallery/194262803/School-app?share=1" target="_blank" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                <img src="images/Well-Donate.png" alt="Well-Donate" />
+                <h3>Well-Donate</h3>
+                </div>
+                <a href="https://www.behance.net/gallery/194163435/Well-Donate?share=1" target="_blank" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                <img src="images/Savings db.png" alt="savings mobile app UI" />
+                <h3>Savings mobile app ui/ux concept</h3>
+                </div>
+                <a href="https://www.behance.net/gallery/194258633/Savings-mobile-app-uiux-concept" target="_blank" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                <img src="images/Harvest Share.jpeg" alt="Harvest Share" />
+                <h3>Harvest Share</h3>
+                </div>
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vQeZgiVCTiGKOFi3zBbePrjfQDYmEDeitmmVBI77E94F6z6zIpcI1n__4eTlIMPO58b0YZczaDNQWM_/pub?start=true&loop=false&delayms=3000" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="screens">
+        <h1>Some UI Screens</h1>
+        <div class="screen-slider">
+        <div class="screen_slider-track">
+            <img src="images/screen 1.png" alt="Screen1" />
+            <img src="images/Clipperz Dashboard.jpeg" alt="Screen5" />
+            <img src="images/Screen 4.png" alt="Screen4" />
+            <img src="images/screen 2.png" alt="Screen2" />
+            <img src="images/screen 3.png" alt="Screen3" />
+        </div>
+        </div>
+    </section>
+
+    <section class="footer">
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/muthoni-njoki-082170224/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Muthoninjoki"><i class="fa-brands fa-github"></i></a>
                 <a href="https://x.com/_MNjoki"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
-            <a href="mailto:your-fmuthoninjoki@gmail.com" class="btn">Hire me</a>
-        </div>
     </section>
+
+    <script>
+        const track = document.querySelector(".slider-track");
+        track.innerHTML += track.innerHTML;
+    </script>
+
 </body>
 </html>
